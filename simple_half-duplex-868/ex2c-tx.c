@@ -1,38 +1,4 @@
-/*= ex2c-tx.c ==================================================================
- *
- * Copyright (C) 2004 Nordic Semiconductor
- *
- * This file is distributed in the hope that it will be useful, but WITHOUT
- * WARRANTY OF ANY KIND.
- *
- * Author(s): Ole Saether
- *
- * DESCRIPTION:
- *
- *   This example should be used together with ex2c-rx.c. One nRF9E5 evaluation
- *   board (transmitter) should be programmed with the hex-file generated from
- *   compiling this file and the other evaluation board (receiver) programmed
- *   with the hex-file generated from compiling ex2c-rx.c.
- *
- *   All switches on the DIP-swith S206 on the receiver must be set to the "on"
- *   position and all switches on the DIP-swith S205 on the transmitter must be
- *   set to the "on" position.
- *
- *   When one of the switched SW1-SW4 on the transmitter is pressed the
- *   corresponding LED on the receiver is turned on.
- *
- *   Please set HFREQ below to a setting that matches the frequency of your
- *   EVBOARD. You also have to set the channel if a frequency other than the
- *   default is needed.
- *
- * COMPILER:
- *
- *   This program has been tested with Keil C51 V7.09.
- *
- * $Revision: 5 $
- *
- *==============================================================================
-*/
+//
 #include <Nordic\reg9e5.h>
 
 #define HFREQ 1                     // 0=433MHz, 1=868/915MHz
